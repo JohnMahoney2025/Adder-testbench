@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+
+full_add_tb
+-ACCESS
++rcw
+-timescale
+1ns/1ps

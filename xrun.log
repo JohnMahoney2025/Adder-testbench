@@ -1,0 +1,23 @@
+xrun: 23.03-s003: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.03-s003: Started on May 13, 2024 at 10:48:43 EDT
+xrun
+	-licqueue
+	-f sim.f
+		-sv
+		-top full_add_tb
+		+access+rcw
+		-timescale 1ns/1ps
+		adder_exercise.v
+Loading snapshot worklib.full_add_tb:v .................... Done
+xcelium> source /hwnet/cadence/xcelium/xcelium2023.03_s003/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation stopped via $stop(1) at time 14 NS + 0
+./adder_exercise.v:32    initial begin a=1'b1; #4; a=1'b0;#10 $stop(); end
+xcelium> groups
+eng-g cockpit-ws
+xcelium> groups
+eng-g cockpit-ws
+xcelium> 
+xmsim: *W,CMUSEX: Control-D in interactive input - one more to exit.
+exit
+TOOL:	xrun	23.03-s003: Exiting on May 14, 2024 at 15:34:44 EDT  (total: 28:46:01)
